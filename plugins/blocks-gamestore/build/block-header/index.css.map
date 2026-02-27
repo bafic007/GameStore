@@ -1,0 +1,1 @@
+{"version":3,"file":"block-header/index.css","mappings":";;;AAAA;EACC;AACD;;AAEA;EACC;AACD,C","sources":["webpack://blocks-gamestore/./src/block-header/editor.scss"],"sourcesContent":[":root{\n\t--action-main-svg: rgba(14,13,15);\n}\n\n.dark-mode-gamestore{\n\t--action-main-svg: rgba(255,255,255);\n}\n"],"names":[],"sourceRoot":""}
