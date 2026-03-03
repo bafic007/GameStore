@@ -28,7 +28,7 @@ add_filter ('block_categories_all', function($categories){
 
 function create_block_blocks_gamestore_block_init() {
 	register_block_type( __DIR__ . '/build/block-header');
-	//register_block_type( __DIR__ . '/build/block-contact');
+	register_block_type( __DIR__ . '/build/block-hero');
 
 	//wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 }

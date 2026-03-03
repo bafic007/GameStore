@@ -11,6 +11,42 @@
   "supports": {
     "html": false
   },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-title"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-description"
+    },
+    "link": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "href"
+    },
+    "linkAnchor": {
+      "type": "string",
+      "source": "html",
+      "selector": "a"
+    },
+    "video": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "isVideo": {
+      "type": "boolean"
+    },
+    "slides": {
+      "type": "array",
+      "default": []
+    }
+  },
   "textdomain": "blocks-gamestore",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",

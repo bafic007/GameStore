@@ -1,24 +1,44 @@
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
-import { useBlockProps } from '@wordpress/block-editor';
+import {RichText, useBlockProps} from '@wordpress/block-editor';
 
-/**
- * The save function defines the way in which the different attributes should
- * be combined into the final markup, which is then serialized by the block
- * editor into `post_content`.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save
- *
- * @return {Element} Element to render.
- */
-export default function save() {
+export default function save({ attributes }) {
+	const { title, description, image, video, link, linkAnchor, slides } = attributes;
+
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Blocks Gamestore – hello from the saved content!' }
-		</p>
+		<div { ...useBlockProps.save() }>
+			{video && (
+				<video className='video-bg' loop autoPlay muted playsInline>
+					<source src={video} type="video/mp4" />
+				</video>
+			)}
+			{image && <img src={image} alt="Background Image" />}
+			<div className="hero-mask"></div>
+			<div className="hero-content">
+				<RichText.Content
+					tagName="h1"
+					className="hero-title"
+					value={title}
+				/>
+				<RichText.Content
+					tagName="p"
+					className="hero-description"
+					value={description}
+				/>
+				<a href={link} className="hero-button shadow">{linkAnchor}</a>
+			</div>
+			{slides && (
+				<div className="hero-slider">
+					<div className="slider-container swiper">
+						<div className="swiper-wrapper">
+							{slides.map((slide, index) => (
+								<div className="swiper-slide slide-item" key={index}>
+									<img src={slide.lightImage} alt="Logo" className='light-logo'/>
+									<img src={slide.darkImage} alt="Logo" className='dark-logo'/>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			)}
+		</div>
 	);
 }
