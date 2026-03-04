@@ -37,6 +37,12 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
+		'attributes' => array(
+			'count' => array(
+				'type' => 'number',
+				'default' => 12
+			)
+		),
 		'textdomain' => 'blocks-gamestore',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
