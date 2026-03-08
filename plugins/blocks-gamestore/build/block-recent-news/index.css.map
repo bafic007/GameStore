@@ -1,0 +1,1 @@
+{"version":3,"file":"block-recent-news/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://blocks-gamestore/./src/block-recent-news/editor.scss"],"sourcesContent":[".wp-block-blocks-gamestore-recent-news p{\n\tmargin-top: 0;\n}\n"],"names":[],"sourceRoot":""}

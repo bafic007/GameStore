@@ -19,7 +19,8 @@
 		"@wordpress/blocks": "latest",
 		"@wordpress/components": "^32.2.0",
 		"@wordpress/element": "^6.40.0",
-		"@wordpress/i18n": "latest"
+		"@wordpress/i18n": "latest",
+		"@wordpress/server-side-render": "^6.17.0"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^31.5.0"
