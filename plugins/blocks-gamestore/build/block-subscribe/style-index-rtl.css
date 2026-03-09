@@ -1,0 +1,67 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block-subscribe/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+.wp-block-blocks-gamestore-block-subscribe {
+  min-height: 500px;
+  padding-top: clamp(3.75rem, 2.77rem + 4.92vw, 7.5rem);
+  padding-bottom: clamp(3.75rem, 2.77rem + 4.92vw, 7.5rem);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+.wp-block-blocks-gamestore-block-subscribe::before {
+  content: "";
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  background: var(--mask-gradient);
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-title {
+  max-width: 800px;
+  font-size: clamp(3.38rem, 3.21rem + 0.82vw, 4rem);
+  color: var(--text-primary);
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-title strong {
+  background: var(--accent-gradient, linear-gradient(-90deg, #3DAFE2 0%, #6F76C0 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-description {
+  max-width: 800px;
+  margin-top: 16px;
+  color: var(--text-secondary);
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-shortcode {
+  max-width: 800px;
+  margin-top: 16px;
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-shortcode .mc4wp-form-fields {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-shortcode .mc4wp-form-fields input[type=submit] {
+  height: 60px;
+  padding: 20px 32px;
+  box-shadow: 0 16px 24px 0 rgba(61, 175, 226, 0.48);
+  transition: all 300ms ease-in-out;
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-shortcode .mc4wp-form-fields input[type=submit]:hover {
+  box-shadow: 0 8px 12px -6px rgba(61, 175, 226, 0.48);
+}
+.wp-block-blocks-gamestore-block-subscribe .subscribe-inner .subscribe-shortcode p:first-child {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}

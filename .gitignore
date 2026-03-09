@@ -1,7 +1,7 @@
 .DS_Store
 /.idea/*
 /.srv/*
-/.tmp/*
+/tmp/*
 !/.srv/custom.ini
 /plugins/aksimet
 /plugins/hello.php

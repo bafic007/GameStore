@@ -39,6 +39,9 @@ function create_block_blocks_gamestore_block_init() {
 	register_block_type( __DIR__ . '/build/block-recent-news', array(
 		'render_callback' => 'view_block_recent_news'
 	));
+	register_block_type( __DIR__ . '/build/block-subscribe', array(
+		'render_callback' => 'view_block_subscribe'
+	));
 
 	//wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 }
