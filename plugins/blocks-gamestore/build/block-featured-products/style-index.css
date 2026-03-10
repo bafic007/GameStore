@@ -1,0 +1,45 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block-featured-products/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+body .is-layout-constrained .wp-block-blocks-gamestore-featured-products {
+  margin-top: clamp(3.75rem, 2.77rem + 4.92vw, 7.5rem) !important;
+  margin-bottom: clamp(3.75rem, 2.77rem + 4.92vw, 7.5rem) !important;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-featured-products h2 {
+  line-height: 1.4;
+  background: var(--accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: block;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-featured-products p {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-featured-products .games-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-featured-products .game-result {
+  max-width: 243px;
+}
+body .is-layout-constrained .wp-block-blocks-gamestore-featured-products .game-result .game-meta h3 {
+  color: var(--text-primary, #0E0D0F);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

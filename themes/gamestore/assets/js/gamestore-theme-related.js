@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="game-price">${game.price}</div>
                         <h3>${game.title}</h3>
                     </div>
+                    <div class="games-platforms">${game.platforms}</div>
                 </a>
             `;
             searchResults.appendChild(gameDiv);

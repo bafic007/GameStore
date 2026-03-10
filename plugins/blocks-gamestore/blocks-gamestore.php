@@ -42,6 +42,9 @@ function create_block_blocks_gamestore_block_init() {
 	register_block_type( __DIR__ . '/build/block-subscribe', array(
 		'render_callback' => 'view_block_subscribe'
 	));
+	register_block_type( __DIR__ . '/build/block-featured-products', array(
+		'render_callback' => 'view_block_featured_products'
+	));
 
 	//wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 }
