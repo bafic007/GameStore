@@ -1,6 +1,7 @@
 :root{
     --background-default: #FAFAFA;
     --background-80: rgba(250, 250, 250, 0.8);
+    --background-2: rgba(250, 250, 250, 0.02);
     --action-main: rgba(14,13,15, 0.64);
     --action-main-svg: rgb(14,13,15);
     --divider-main: rgba(14,13,15, 0.08);
