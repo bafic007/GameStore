@@ -1,0 +1,1 @@
+{"version":3,"file":"block-faq/index.css","mappings":";;;AAAA;EACC;AACD;;AACA;EACC;AAED,C","sources":["webpack://blocks-gamestore/./src/block-faq/editor.scss"],"sourcesContent":[".gutenberg-faq-item{\n\tmargin-bottom: 16px;\n}\n.wp-block-blocks-gamestore-block-faq .faq-item .faq-item-description{\n\tdisplay: block;\n}\n\n"],"names":[],"sourceRoot":""}

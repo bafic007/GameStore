@@ -34,7 +34,7 @@ function create_block_blocks_gamestore_block_init() {
 	register_block_type( __DIR__ . '/build/block-header');
 	register_block_type( __DIR__ . '/build/block-hero');
 	register_block_type( __DIR__ . '/build/block-cta');
-
+	register_block_type( __DIR__ . '/build/block-faq');
 	register_block_type( __DIR__ . '/build/block-games-line', array(
 		'render_callback' => 'view_block_games_line'
 	));
