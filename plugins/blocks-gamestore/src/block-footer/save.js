@@ -10,13 +10,16 @@ export default function save({ attributes }) {
 				<div className="footer-bottom">
 					<div className="left-part">
 						{copyrights && (<p>{ copyrights }</p>)}
-						{logos && (
-							logos.map((logo, index) => (
-								<a href={logo.url} key={index} target="_blank" rel="noopener noreferrer">
-									<img src={logo.image} alt="Logo"/>
-								</a>
-							))
-						)}
+						<div className="footer-logos">
+							{logos && (
+								logos.map((logo, index) => (
+									<a href={logo.url} key={index} target="_blank" rel="noopener noreferrer">
+										<img src={logo.image} alt="Logo" className="light-logo"/>
+										<img src={logo.imageDark} alt="Logo Dark" className="dark-logo"/>
+									</a>
+								))
+							)}
+						</div>
 					</div>
 					<div className="right-part">
 						{links && (

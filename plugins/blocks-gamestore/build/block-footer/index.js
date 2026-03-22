@@ -79,7 +79,8 @@ const LogosRepeater = ({
   const addLogo = () => {
     setLogos([...logos, {
       url: "",
-      image: ""
+      image: "",
+      imageDark: ""
     }]);
   };
   const removeLogo = index => {
@@ -113,7 +114,18 @@ const LogosRepeater = ({
         onSelect: media => updateLogos(index, "image", media.url),
         accept: "image/*",
         allowedTypes: ['image']
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), logo.imageDark && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+        src: logo.imageDark,
+        alt: "Logo Dark"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaPlaceholder, {
+        icon: "format-image",
+        labels: {
+          title: 'Logo Dark'
+        },
+        onSelect: media => updateLogos(index, "imageDark", media.url),
+        accept: "image/*",
+        allowedTypes: ['image']
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
         variant: "secondary",
         onClick: () => removeLogo(index),
         className: "remove-logo-button",
@@ -176,14 +188,19 @@ function Edit({
             className: "left-part",
             children: [copyrights && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
               children: copyrights
-            }), logos && logos.map((logo, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+            }), logos && logos.map((logo, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("a", {
               href: logo.url,
               target: "_blank",
               rel: "noopener noreferrer",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
                 src: logo.image,
-                alt: "Logo"
-              })
+                alt: "Logo",
+                className: "light-logo"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+                src: logo.imageDark,
+                alt: "Logo Dark",
+                className: "dark-logo"
+              })]
             }, index))]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "right-part",
@@ -261,15 +278,23 @@ function save({
           className: "left-part",
           children: [copyrights && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
             children: copyrights
-          }), logos && logos.map((logo, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: logo.url,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-              src: logo.image,
-              alt: "Logo"
-            })
-          }, index))]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "footer-logos",
+            children: logos && logos.map((logo, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+              href: logo.url,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+                src: logo.image,
+                alt: "Logo",
+                className: "light-logo"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+                src: logo.imageDark,
+                alt: "Logo Dark",
+                className: "dark-logo"
+              })]
+            }, index))
+          })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           className: "right-part",
           children: links && links.map((link, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {

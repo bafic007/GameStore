@@ -53,7 +53,7 @@ const LinkRepeater = ({ links, setLinks }) => {
 
 const LogosRepeater = ({ logos, setLogos}) => {
 	const addLogo = () => {
-		setLogos([...logos, { url: "", image: "" }]);
+		setLogos([...logos, { url: "", image: "", imageDark: "" }]);
 	};
 
 	const removeLogo = (index) => {
@@ -86,6 +86,15 @@ const LogosRepeater = ({ logos, setLogos}) => {
 						accept="image/*"
 						allowedTypes={['image']}
 					/>
+					<br/><br/>
+					{logo.imageDark && (<img src={logo.imageDark} alt="Logo Dark"/>)}
+					<MediaPlaceholder
+						icon="format-image"
+						labels={{ title: 'Logo Dark' }}
+						onSelect={media => updateLogos(index, "imageDark", media.url) }
+						accept="image/*"
+						allowedTypes={['image']}
+					/><br/><br/>
 					<Button
 						variant="secondary"
 						onClick={() => removeLogo(index)}
@@ -133,7 +142,8 @@ export default function Edit({ attributes, setAttributes }) {
 							{logos && (
 								logos.map((logo, index) => (
 									<a href={logo.url} key={index} target="_blank" rel="noopener noreferrer">
-										<img src={logo.image} alt="Logo"/>
+										<img src={logo.image} alt="Logo" className="light-logo"/>
+										<img src={logo.imageDark} alt="Logo Dark" className="dark-logo"/>
 									</a>
 								))
 							)}

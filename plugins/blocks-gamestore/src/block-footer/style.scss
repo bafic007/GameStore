@@ -1,4 +1,6 @@
 .wp-block-blocks-gamestore-block-footer {
+	margin-bottom: clamp(3.75rem, calc(2.77rem + 4.92vw), 7.5rem) !important;
+
 	.inner-footer {
 		border-radius: 8px;
 		border: 1px solid var(--divider-main, rgba(14,13,15, 0.08));
@@ -10,11 +12,66 @@
 		flex-direction: column;
 		gap: 24px;
 
+		.footer-copyrights{
+			max-width: 400px;
+			font-size: 16px;
+			color: var(--text-secondary, rgba(14,13,15, 0.70));
+			line-height: 1.5;
+		}
+
 		.footer-line{
 			height: 1px;
 			width: 100%;
 			display: block;
 			background-color: var(--divider-main, rgba(14,13,15, 0.08));
 		}
+		.footer-bottom{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px;
+
+			.left-part{
+				display: flex;
+				gap: 48px;
+				align-items: center;
+				font-size: 16px;
+				font-weight: 600;
+				color: var(--text-secondary, rgba(14,13,15, 0.70));
+
+				.footer-logos {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+
+					img.dark-logo{
+						display: none;
+					}
+				}
+			}
+			.right-part{
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				gap: 48px;
+
+				a{
+					text-transform: uppercase;
+					font-size: 12px;
+					font-weight: 700;
+					letter-spacing: 1.8px;
+					line-height: 1;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.dark-mode-gamestore{
+	.wp-block-blocks-gamestore-block-footer .inner-footer .footer-bottom .left-part .footer-logos img.dark-logo{
+		display: block;
+	}
+	.wp-block-blocks-gamestore-block-footer .inner-footer .footer-bottom .left-part .footer-logos img.light-logo{
+		display: none;
 	}
 }
