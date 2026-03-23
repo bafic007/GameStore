@@ -127,6 +127,7 @@ body {
     --text-secondary: rgba(14,13,15, 0.70);
     --secondary-48: rgba(250,250,250, 0.48);
     --white-contrast: #0A090A;
+    --black-contrast: #FFFFFF;
     --purple-main: #6F76C0;
     --wp--preset--color--base: #FAFAFA;
     --mask-gradient: linear-gradient(270deg, rgba(14,13,15, 0.00) 0%, #ECECEC 79.5%);
@@ -145,6 +146,7 @@ body {
     --text-primary: #FFFFFF;
     --secondary-48: rgba(14,13,15, 0.60);
     --white-contrast: #FFFFFF;
+    --black-contrast: #0A090A;
     --wp--preset--color--base: #0E0D0F;
     --wp--preset--color--contrast: #FAFAFA;
     --mask-gradient: linear-gradient(270deg, rgba(14,13,15, 0.00) 0%, #0E0D0F 79.5%);

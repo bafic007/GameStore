@@ -1,1 +1,1 @@
-{"version":3,"file":"block-footer/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://blocks-gamestore/./src/block-footer/editor.scss"],"sourcesContent":[".dark-logo{\n\tdisplay: none;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"block-footer/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://blocks-gamestore/./src/block-footer/editor.scss"],"sourcesContent":[".dark-logo{\r\n\tdisplay: none;\r\n}\r\n"],"names":[],"sourceRoot":""}

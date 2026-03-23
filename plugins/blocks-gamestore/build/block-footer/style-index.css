@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  box-sizing: border-box;
 }
 .wp-block-blocks-gamestore-block-footer .inner-footer .footer-copyrights {
   max-width: 400px;
